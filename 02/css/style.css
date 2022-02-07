@@ -6,12 +6,12 @@ img{display: block; border: 0;}
 .cf::after{content: ""; clear: both; display: block;}
 
 #wrap{width: 1200px; height: 700px; margin: 0 auto;}
-
-header{height: 100px;position: relative;}
+header{height: 100px; position: relative;}
 #slide{height: 300px;}
 #content{height: 200px;}
 footer{height: 100px; background: #faa}
 
+/* header */
 .logo{
     width: 200px;
     padding: 30px 0;
@@ -24,8 +24,6 @@ nav{width: 1000px;
 
 .sub{display: none; 
     color: #fff;}
-
-/* .gnb:hover .sub{display: block;} */
 
 .gnb a{
     width: 150px; 
@@ -58,6 +56,7 @@ nav{width: 1000px;
     display: none;
 }
 
+/* slide */
 #slide{width:1200px; height:300px; overflow: hidden;}
 #slide ul{width: 400%; animation: slide 9s infinite;}
 #slide li{float: left; position: relative;}
@@ -68,7 +67,7 @@ nav{width: 1000px;
     100%{margin-left: -300%;}
 }
 
-/* #content */
+/* content */
 section{
     width: 380px; height: 180px;
     padding: 10px;
@@ -81,6 +80,48 @@ section{
     border-bottom: 1px #333 solid;
 }
 
+/* 공지사항 */
+.notice a{
+    padding: 0 10px;
+    line-height: calc(140px / 6);
+    transition: .3s;
+    height: calc(140px / 6); /* 높이 넣어주기, 안하면 전부 cf 달아줘야함 */
+    font-size: 10pt;
+}
+
+.notice a:hover{
+    background: #333;
+    color: #fff;
+}
+
+.subject{
+    width: 260px;
+    float: left;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.date{
+    width: 100px;
+    float: left;
+    text-align: right;
+}
+
+/* 갤러리 */
+.gallery a img{width: 100px; height: 100px;}
+
+.gallery li{
+    padding: 20px 0 20px 20px;
+    float: left;
+}
+.gallery a{transition: .3s;}
+
+.gallery a:hover{
+    opacity: .6;
+}
+
+/* 정기후원안내 */
 .banner_img img{width: 100px; height: 100px;} /* 포토샵에서 100*100 만들어오기 */
 
 .banner_img{
@@ -95,6 +136,76 @@ section{
     padding: 20px;
 }
 
-.banner_text a{
+.banner a{transition: .6s;}
+.banner a:hover{
+    background: #eee;
+}
+
+.huwon{
     text-align: right;
+    line-height: 40px;
+}
+
+.huwon:hover{
+    color: #faf;
+    font-weight: bold;
+}
+
+/* footer */
+.copyright{
+    width: 800px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.family{
+    width: 200px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    padding: 34px 0;
+}
+.family select{
+    width: 150px;
+    height: 32px;
+}
+
+/* popup */
+#popup{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 100;
+    display: none;
+}
+
+.popup_body{
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border: 3px #faa solid;
+    border-radius: 5px;
+    position: absolute;
+    top: calc(50% - 203px);
+    left: calc(50% - 303px);
+    text-align: center;
+}
+.popup_body h3{
+    padding: 20px;
+}
+.popup_body p{
+    padding: 20px;
+    font-size: 15px;
+    height: 200px; /* 닫기버튼 높이 맞추기 위한 설정 */
+    text-align: left;
+}
+.close{
+    width: 100px;
+    line-height: 40px;
 }
