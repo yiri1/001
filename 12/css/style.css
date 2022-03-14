@@ -1,0 +1,182 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; display: block; color: inherit;}
+img{border: 0; display: block;}
+.cf::after{content: "";display: block;clear: both;}
+
+#wrap{
+    width: 1000px;
+    height: 650px;
+}
+#left{
+    width: 200px;
+    height: 650px;
+    float: left;
+    /* background: #eee; */
+}
+#right{
+    width: 800px;
+    height: 650px;
+    float: left;
+    /* background: #ccc; */
+}
+.logo img{width: 200px;}
+/* nav{width: 200px; height: 550px;} */
+
+.sub{
+    display: none; 
+    position: absolute;
+    top: -32px;
+    left: 160px;
+    height: 240px; 
+    background: #fff;
+}
+
+/* .gnb li:hover .sub{display: block;} */
+.gnb a{
+    width: 160px;
+    line-height: 40px;
+    text-align: center;
+    background: #fdf;
+    transition: .3s;
+}
+.sub a{background: #fff; line-height: 32px;}
+.gnb{
+    /* margin: 20px; 포지션과 동일한 값 */
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.gnb>li:hover>a{background: #fff;}
+.sub>li:hover>a{background: #fdf;}
+
+/* slide */
+#slide{
+    width: 800px; 
+    height: 350px; 
+    overflow: hidden;
+}
+#slide ul{
+    width:400%; 
+    animation: slide 9s infinite;
+}
+#slide li{float: left;}
+@keyframes slide{
+    0%{margin-left: 0;}
+    33.3333%{margin-left: -100%;}
+    66.6666%{margin-left: -200%;}
+    100%{margin-left: -300%;}
+}
+
+/* content */
+#content section{
+    width: 240px;
+    height: 180px;
+    padding: 10px; /* 패딩 들어가서 w,h 20씩 빼기 */
+    float: left;
+}
+#content section:nth-child(1){
+    width: 260px;
+}
+
+#content section h3{
+    line-height: 29px;
+    text-align: center;
+    border-bottom: 1px #333 solid;
+}
+
+.notice a{
+    /* padding: 0 10px; */
+    line-height: 30px;
+    height: 30px; /* cf 대용 */
+    font-size: 13px;
+    transition: .3s;
+}
+.notice a:hover{background: #fdf;}
+.subject{
+    width: 180px;
+    float: left;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.date{
+    width: 80px; 
+    float: left;
+    text-align: right;
+}
+
+.gallery img{width: 70px;}
+
+.gallery li{
+    float: left;
+    padding: 40px 0 0 10px;
+}
+.gallery li:first-child{
+    padding: 40px 0 0 5px;
+}
+.gallery a:hover{opacity: .6;}
+
+.shortcut{text-align: center;}
+.shortcut span{font-size: 13px;}
+
+/* footer */
+footer{width: 800px; height: 100px; background: #eee;}
+.f_logo{width: 200px; height: 100px; float: left;}
+.f_logo img{width: 200px;}
+.copyright{
+    width: 450px; height: 80px;
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+.famliy{
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin-top: 35px;
+    text-align: center;
+}
+.famliy select{
+    width: 130px;
+    height: 30px;
+}
+
+/* popup */
+#popup{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.popup_body{
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    background: #fff;
+    border: 3px #333 solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup_body h3{line-height: 60px;}
+.popup_body p{
+    text-align: left;
+    font-size: 14px;
+    padding: 5px 20px 0 20px;
+}
+.popup_body .close{
+    width: 100px;
+    line-height: 30px;
+    margin: 35px 0;
+}

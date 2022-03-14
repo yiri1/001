@@ -1,0 +1,253 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit; display: block;}
+img{border: 0; display: block;}
+.cf::after{content: "";display: block;clear: both;}
+
+#wrap{margin: 0 auto; width: 1200px;}
+header{height: 100px;}
+#content{height: 200px;}
+footer{height: 100px;background: #eee;}
+
+/* header */
+.logo{
+    width: 200px;
+    padding: 30px 0;
+    float: left;
+}
+.logo img{
+    width: 200px;
+    height: 50px;
+}
+nav{
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+
+.sub{display: none;}
+
+/* .gnb li:hover .sub{display: block;} 스크립트에서 하기*/
+
+.gnb a{
+    width: 150px;
+    line-height: 40px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.gnb>li{float: left;}
+
+.gnb{
+    position: relative;
+    top: 30px;
+    left: 370px;
+    z-index: 10;
+    width: 600px;
+}
+
+.gnb li:hover>a{
+    background: #fff;
+    color: #333;
+}
+.sub a{line-height: 35px;}
+
+/* slide */
+#slide{
+    width: 1200px;
+    overflow: hidden;
+    height: 300px;
+}
+#slide img{
+    width: 1200px;
+    height: 300px;
+}
+#slide ul{
+    animation: fade 9s infinite;
+}
+@keyframes fade{
+    0%{margin-top: 0; opacity: 0;}
+    3%{margin-top: 0; opacity: 1;}
+    30%{margin-top: 0; opacity: 1;}
+    33%{margin-top: 0; opacity: 0;}
+
+    33.1%{margin-top: -300px; opacity: 0;}
+    36%{margin-top: -300px; opacity: 1;}
+    63%{margin-top: -300px; opacity: 1;}
+    66%{margin-top: -300px; opacity: 0;}
+
+    66.1%{margin-top: -600px; opacity: 0;}
+    69%{margin-top: -600px; opacity: 1;}
+    97%{margin-top: -600px; opacity: 1;}
+    100%{margin-top: -600px; opacity: 0;}
+}
+
+/* content */
+#content section{
+    width: 380px;
+    height: 180px;
+    padding: 10px;
+    float: left;
+}
+.tab a{
+    width: 190px;
+    line-height: 30px;
+    text-align: center;
+    background:#eee;
+    transition: .3s;
+}
+.tab a:hover{
+    background: #333;
+    color: #fff;
+}
+.tab>li{float: left;}
+
+.notice a{
+    padding: 0 10px;
+    line-height: 25px;
+    height: 25px;
+    background: #eee;
+    transition: .3s;
+}
+.notice a:hover{
+    background: #333;
+    color: #fff;
+}
+.notice .subject{
+    width: 260px;
+    float: left;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice .date{
+    width: 100px;
+    float: left;
+    text-align: right;
+}
+
+.gallery img{width: 100px;}
+
+.gallery li{
+    float: left;
+    padding: 25px 0 25px 20px;
+}
+
+.gallery{
+    background: #eee;
+    display: none;
+}
+
+.gallery a:hover{
+    opacity: .6;
+}
+
+/* banner */
+section:nth-child(2) a{
+    width: 150px;
+    margin: 0 auto;
+}
+section:nth-child(2) a:hover{
+    opacity: .6;
+}
+section:nth-child(2) p{
+    text-align: center;
+    line-height: 30px;
+}
+section:nth-child(2) img{
+    width: 150px;
+}
+
+/* 바로가기 */
+.shortcut img{width: 100px;}
+.shortcut li{
+    padding: 25px 0 25px 20px;
+    float: left;
+}
+.shortcut h3{
+    text-align: center;
+}
+.shortcut a:hover{
+    opacity: .6;
+}
+
+/* footer */
+.f_right{
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+
+.bmenu a{
+    display: inline;
+    line-height: 40px;
+}
+.bmenu a:hover{
+    text-decoration: underline;
+}
+.bmenu{
+    text-align: center;
+}
+.copyright{
+    text-align: center;
+}
+
+/* popup */
+#popup{
+    width: 100%; 
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+}
+.popup_body{
+    width: 600px; height: 400px;
+    background: #fff;
+    border: 3px #ccc solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.popup_body h3{
+    line-height: 60px;
+}
+.popup_body p{
+    padding: 0 30px;
+    text-align: left;
+}
+
+/* Xbox */
+.close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 550px;
+    cursor: pointer;
+}
+.bar{
+    width: 22px;
+    height: 2px;
+    background: #aaa;
+    position: absolute;
+    top: 50%; left: 50%;
+}
+.bar:nth-child(1){
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.bar:nth-child(2){
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close:hover .bar{
+    background: #333;
+}
