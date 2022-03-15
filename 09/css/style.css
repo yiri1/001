@@ -19,3 +19,217 @@ nav{
 }
 
 .sub{display:none;}
+/* .gnb li:hover .sub{display: block;} */
+
+.gnb a{
+    line-height: 40px;
+    background: #eee;
+    text-align: center;
+}
+.gnb{
+    width: 180px;
+    position: relative;
+    top:30px;
+    left: 10px;
+}
+
+.gnb li:hover>a{
+    background: #69f; color: #fff;
+}
+
+/* 추가사항 */
+.gnb>li{
+    border: 1px #333 solid;
+    border-bottom: 0;
+}
+.gnb>li:last-child{border-bottom: 1px #333 solid;}
+.gnb{left: 9px;}
+.sub a{line-height: 32px;}
+
+/* slide */
+#slide{
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+#slide ul{animation: fade 9s infinite;}
+@keyframes fade{
+    0%{margin-top: 0; opacity: 0;}
+    3%{margin-top: 0; opacity: 1;}
+    30%{margin-top: 0; opacity: 1;}
+    33%{margin-top: 0; opacity: 0;}
+
+    33.1%{margin-top: -350px; opacity: 0;}
+    36%{margin-top: -350px; opacity: 1;}
+    63%{margin-top: -350px; opacity: 1;}
+    66%{margin-top: -350px; opacity: 0;}
+    
+    66.1%{margin-top: -700px; opacity: 0;}
+    69%{margin-top: -700px; opacity: 1;}
+    97%{margin-top: -700px; opacity: 1;}
+    100%{margin-top: -700px; opacity: 0;}
+}
+
+/* #content */
+#content{
+    width: 800px;
+    height: 200px;
+}
+#content section{
+    width: 240px;
+    height: 180px;
+    padding: 10px;
+    float: left;
+}
+#content section:first-child{
+    width: 260px;
+}
+
+#content .tab a{
+    width: 130px;
+    line-height: 29px;
+    border-bottom: 1px #333 solid;
+    transition: .3s;
+    text-align: center;
+}
+#content .tab a:hover{background: #69f; color: #fff;}
+#content .tab li{float: left;}
+
+#content .notice a{
+    line-height: 30px;
+    font-size: 13px;
+    height: 30px; /* cf 대용 */
+}
+#content .notice a:hover{background: #69f; color: #fff;}
+
+#content .subject{
+    width: 180px;
+    float: left;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#content .date{
+    width: 80px;
+    float: left;
+    text-align: right;
+}
+
+#content .gallery{display: none;}
+
+#content .gallery img{width: 80px;}
+#content .gallery li{
+    padding: 35px 10px 35px 0;
+    float: left;
+}
+#content .gallery li:last-child{
+    padding: 35px 0;
+}
+#content .gallery a{transition: .3s;}
+#content .gallery a:hover{
+    opacity: .6;
+    outline: 1px #69f solid;
+}
+
+/* 추가사항 tab */
+#content .tab a.on{
+    background: #333;
+    color: #fff;
+}
+
+/* banner */
+#content section h3{
+    text-align: center;
+    line-height: 29px;
+    border-bottom: 1px #333 solid;
+    font-size: 16px;
+    font-weight: normal;
+}
+#content .banner a{
+    margin-top: 35px;
+    height: 80px;
+    transition: .3s;
+}
+#content .banner a:hover{
+    background: #eee;
+}
+#content .banner img{
+    width: 80px;
+    float: left;
+}
+#content .banner p{
+    padding-left: 10px;
+    font-size: 11px;
+    float: left;
+    width: 150px;
+}
+
+/* 바로가기 */
+#content .shortcut img{
+    width: 70px;
+    margin: 5px;
+}
+#content .shortcut li{
+    float: left;
+    margin-top: 35px;
+}
+#content .shortcut h3{
+    border: 0;
+    font-size: 13px;
+}
+#content .shortcut a{transition: .3s;}
+#content .shortcut a:hover{
+    background: #eee;
+    text-decoration: underline;
+}
+
+/* footer */
+footer{width: 800px; height: 100px;background: #eee;}
+.f_logo{float: left;}
+.f_right{
+    float: left; 
+    width: 600px; height: 100px;
+    font-size: 13px;
+}
+
+.f_menu{text-align: center;}
+.f_menu a{display: inline; line-height: 30px;}
+.f_menu a:hover{text-decoration: underline;}
+
+.copyright{text-align: center;}
+
+/* #popup */
+#popup{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 10;
+    display: none;
+}
+.popup_body{
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border: 3px #69f solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#popup .popup_body h3{
+    line-height: 80px;
+    font-size: 1.3rem;
+}
+.popup_body p{
+    text-align: left;
+    padding:0 40px;
+}
+.popup_body .close{
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+}

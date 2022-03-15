@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>해운대 빛축제</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -52,7 +53,136 @@
                 </ul>
             </nav>
         </div>
-        <div id="right"></div>
+        <div id="right">
+            <div id="slide">
+                <ul>
+                    <li><a href="#"><img src="img/slide1.jpg" alt="slide"></a></li>
+                    <li><a href="#"><img src="img/slide2.jpg" alt="slide"></a></li>
+                    <li><a href="#"><img src="img/slide3.jpg" alt="slide"></a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <section>
+                    <ul class="tab cf">
+                        <li><a href="#" class="on">공지사항</a></li>
+                        <li><a href="#">갤러리</a></li>
+                    </ul>
+                    <ul class="notice">
+                        <li>
+                            <a href="#">
+                                <div class="subject open">'2020 제6회 해운대 빛축제 일정안내</div>
+                                <div class="date">2019-10-15</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="subject">제6회 해운대 빛축제 조직위원회 발족</div>
+                                <div class="date">2019-07-01</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="subject">해운대 빛축제 하계 홍보단 발족</div>
+                                <div class="date">2019-06-22</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="subject">해운대 상권 활성화 재단 이사 이취임식</div>
+                                <div class="date">2019-06-15</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="subject">제5회 해운대 빛축제 조직위 해단식</div>
+                                <div class="date">2019-02-10</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="gallery cf">
+                        <li><a href="#"><img src="img/gallery01.jpg" alt="갤러리"></a></li>
+                        <li><a href="#"><img src="img/gallery02.jpg" alt="갤러리"></a></li>
+                        <li><a href="#"><img src="img/gallery03.jpg" alt="갤러리"></a></li>
+                    </ul>
+                </section>
+                <section class="banner">
+                    <h3>배너</h3>
+                    <a href="#">
+                        <img src="img/banner.png" alt="베너">
+                        <p>
+                            해운대구<br>
+                            생활안전체험과<br>
+                            체험신청<br>
+                            기간 : 19.09.23~12.19<br>
+                            문의 : 안전총괄과(749-6164)
+                        </p>
+                    </a>
+                </section>
+                <section>
+                    <h3>바로가기</h3>
+                    <ul class="shortcut cf">
+                        <li>
+                            <a href="#">
+                                <img src="img/short1.png" alt="바로가기">
+                                <h3>해운대구청</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/short2.png" alt="바로가기">
+                                <h3>축제일정</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/short3.png" alt="바로가기">
+                                <h3>축제안내도</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <footer>
+                <div class="logo f_logo">
+                    <a href="#">
+                        <img src="img/flogo.png" alt="풋터로고">
+                    </a>
+                </div>
+                <div class="f_right">
+                    <div class="f_menu">
+                        <a href="#">관광명소</a> |
+                        <a href="#">모래축제</a> |
+                        <a href="#">버스킹</a> |
+                        <a href="#">시티투어</a> |
+                        <a href="#">축제·행사·체험</a> |
+                    </div>
+                    <div class="copyright">
+                        (우)48095 부산광역시 해운대구 중동2로 11(중동) | 대표전화 : (051)749-4000 | 팩스 : (051)749-4444
+                        11, Jungdong(中洞) 2-ro, Haeundae-gu, Busan, 48095, Rep. of KOREA <br>
+                        Copyrightⓒ 2019 Haeundae-gu. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
+    <div id="popup">
+        <div class="popup_body">
+            <h3>제6회 해운대 빛축제 일정안내</h3>
+            <p>
+                제6회 해운대 빛축제가 12월 1일 점등식을 시작으로 즐거운 빛의 항해를 시작한다. 새롭게 정비되어 관광객들의 사랑을 받고있는 해운대광장(구남로)을 중심으로(구)해운대역, 해운대전통시장, 애향길, 해수욕장 일대에서 그 화려한 빛의 향연을 시작합니다.
+                <br><br>
+                시작일 : 2018.12.01<br>
+                종료일 : 2019.01.31<br>
+                전화번호 : 051-749-4472<br>
+                주소 : 부산광역시 해운대구 해운대해변로 265번길 6<br>
+                주최 : 해운대구청, 해운대상권활성화재단<br>
+                이용요금 : 무료
+            </p>
+            <button class="close">닫기</button>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
 </body>
 </html>
