@@ -1,0 +1,3 @@
+$(".gnb li").hover(
+    fu
+)
