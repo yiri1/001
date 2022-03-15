@@ -1,3 +1,8 @@
 $(".gnb li").hover(
-    fu
+    function(){
+        $(this).children(".sub").stop().fadeIn();
+    },
+    function(){
+        $(this).children(".sub").stop().fadeOut();
+    },
 )

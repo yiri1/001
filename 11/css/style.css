@@ -61,3 +61,17 @@ nav{
     border-bottom: 0;
 }
 .gnb>li:last-child{border-bottom: 1px #333 solid;}
+
+/* slide */
+#slide{
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+#slide ul{
+    animation: slide 9s infinite;
+    width:400%;
+}
+@keyframes slide{
+    0%{margin-left: 0;}
+}
