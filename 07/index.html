@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>세계의 미술작품</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
                 </a>
             </div>
             <nav>
-                <ul class="gnb">
+                <ul class="gnb cf">
                     <li>
                         <a href="#">소장처별</a>
                         <ul class="sub">
@@ -57,26 +58,127 @@
             </nav>
         </div>
     </header>
-    <div id="slide"></div>
+    <div id="slide">
+        <ul>
+            <li><a href="#"><img src="img/slide1.jpg" alt="슬라이드1"></a></li>
+            <li><a href="#"><img src="img/slide2.jpg" alt="슬라이드2"></a></li>
+            <li><a href="#"><img src="img/slide3.jpg" alt="슬라이드3"></a></li>
+            <li><a href="#"><img src="img/slide1.jpg" alt="슬라이드1"></a></li>
+        </ul>
+    </div>
     <div id="content">
         <section>
             <h3>공지사항</h3>
+            <ul class="notice">
+                <li>
+                    <a href="#" class="open">
+                        <div class="date">[2019.08.26]</div>
+                        <div class="subject">2019KAFA 대한민국 미술축전 '국제아트페어'</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="date">[2019.07.16]</div>
+                        <div class="subject">‘당산원치과의원’ 서대표원장과 업무협약</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="date">[2019.07.11]</div>
+                        <div class="subject">‘2019년 북경 비엔날레’ 한국관특별전 참관</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="date">[2019.06.18]</div>
+                        <div class="subject">강원도 산불 피해지역 미술인(회원) 돕기</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="date">[2019.04.09]</div>
+                        <div class="subject">공공대출권 도입촉구를 위한 서명운동</div>
+                    </a>
+                </li>
+            </ul>
         </section>
         <section>
             <h3>갤러리</h3>
+            <ul class="gallery cf">
+                <li><a href="#"><img src="img/gallery01.jpg" alt="갤러리1"></a></li>
+                <li><a href="#"><img src="img/gallery02.jpg" alt="갤러리2"></a></li>
+                <li><a href="#"><img src="img/gallery03.jpg" alt="갤러리3"></a></li>
+            </ul>
         </section>
         <section>
             <h3>배너</h3>
+            <ul class="banner">
+                <li>
+                    <a href="#">
+                        <img src="img/banner.jpg" alt="배너">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        ‘현대미술의 거장’ <br>
+                        데이비드 호크니展 <br>
+                        국내 첫 대규모 개인전 <br>
+                        <p>자세히 보기</p>
+                    </a>
+                </li>
+            </ul>
         </section>
     </div>
     <footer>
         <div id="footer">
-            <div class="f_logo logo">
-                <a href="#"><img src="img/logo.png" alt="풋터로고"></a>
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="풋터로고">
+                </a>
             </div>
-            <div class="copyright"></div>
-            <div class="sns"></div>
+            <div class="copyright">
+                한국미술작품협회 | 주소 : 07995 서울시 양천구 목동서로 225 대한민국예술인센터 812호 | <br>
+                TEL : 02-744-8053.4 | FAX : 02-741-6240 | E-MAIL : exhibition@kaa.or.kr <br>
+                Copyrights 2010 재단법인 한국미술작품협회 All Rights Reserved.
+            </div>
+            <div class="sns cf">
+                <a href="#none">
+                    <img src="img/sns1.png" alt="sns">
+                </a>
+                <a href="#none">
+                    <img src="img/sns2.png" alt="sns">
+                </a>
+                <a href="#none">
+                    <img src="img/sns3.png" alt="sns">
+                </a>
+            </div>
         </div>
     </footer>
+    <div id="popup">
+        <div class="popup_body">
+            <h3>2019KAFA 대한민국 미술축전 국제아트페어 작가모집</h3>
+            <p>
+                안녕하세요. 한국미술작품협회입니다. <br><br>
+                2019KAFA대한민국미술축전 국제아트페어를 일산 킨텍스에서 개최합니다. 이번 2019KAFA 대한민국 미술축전 국제아트페어는 순수 국제아트페어로서 권위와 고품격의 아트페어를 지향하며 서울신문과 함께 진행합니다, 많은 관심과 참여 부탁드리며, 아래를 참조하여 참가신청을 진행하시기 바랍니다.
+                <br><br>
+                ◆ 일 시 : 2019년 11월 20일(수) ~ 24일(일)<br>
+                ◆ 전시장소 : 일산 킨텍스(KINTEX 1전시장 3Hall)<br>
+                ◆ 자격요건 : 국내외 미술인<br>
+                ◆ 참가신청 : 10월 4일(금) 오후 5시 선착순마감<br>
+                ◆ 제출방법 : 웹하드 (www.webhard.co.kr) 아이디 : kafa2019, 비밀번호  : 1234<br>
+                ①인물사진 ②작품이미지 3점 ③신청서 및 동의서(소정양식)<br>
+                ◆ 참가비용 : 150만원 (2019년 10월 4일 까지)<br>
+                해당 일까지 부스비를 완납하지 않은 작가 분은 부스배정에서 제외되며 참가 불허됨.<br>
+                ◆ 지원사항 : 1부스(2.4x3.6x2.4m), 종합도록1부, 입장권 100매<br>
+                ◆ 송금계좌 : 우리은행 1005-101-086578 (재)한국미술작품협회<br>
+                ◆ 문 의 : 02-2655-3455<br>
+                ◆ 주 최 : (재)한국미술작품협회, 킨텍스<br>
+                ◆ 주 관 : 대한민국 미술축전 조직위원회, 서울신문<br>
+            </p>
+            <button class="close">닫기</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

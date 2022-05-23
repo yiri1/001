@@ -1,12 +1,10 @@
-$(".gnb").hover(
+$(".gnb li").hover(
     function(){
-        $(".sub").stop().slideDown();
-        $(".nav_back").stop().slideDown();
+        $(this).children(".sub").stop().slideDown();
     },
     function(){
-        $(".sub").stop().slideUp();
-        $(".nav_back").stop().slideUp();
-    }
+        $(this).children(".sub").stop().slideUp();
+    },
 );
 
 $(".open").click(
